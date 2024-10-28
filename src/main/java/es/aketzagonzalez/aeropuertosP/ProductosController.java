@@ -1,36 +1,28 @@
 package es.aketzagonzalez.aeropuertosP;
 
+
+import javafx.application.Application;
+import javafx.fxml.FXMLLoader;
+
+import javafx.scene.Parent;
+import javafx.scene.Scene;
+import javafx.stage.Stage;
+
+import javafx.event.ActionEvent;
+import es.aketzagonzalez.aeropuertosO.ProductoLabel;
+import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
-import javafx.scene.control.Label;
-import javafx.scene.image.ImageView;
+
 
 public class ProductosController {
 
     @FXML
-    private ImageView imgProducto;
+    private ProductoLabel producto1;
 
     @FXML
-    private ImageView imgProducto1;
+    private ProductoLabel producto2;
 
     @FXML
-    private ImageView imgProducto2;
-
-    @FXML
-    private Label lblNombreProducto;
-
-    @FXML
-    private Label lblNombreProducto1;
-
-    @FXML
-    private Label lblNombreProducto2;
-
-    @FXML
-    private Label lblStock;
-
-    @FXML
-    private Label lblStock1;
-
-    @FXML
-    private Label lblStock2;
+    private ProductoLabel producto3;
 
 }

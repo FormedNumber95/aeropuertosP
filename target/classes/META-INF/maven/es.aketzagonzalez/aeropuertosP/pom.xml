@@ -15,6 +15,11 @@
     </properties>
 
     <dependencies>
+		<dependency>
+			<groupId>es.aketzagonzalez</groupId>
+			<artifactId>aeropuertosO</artifactId>
+			<version>0.0.2-SNAPSHOT</version>
+		</dependency>
         <dependency>
             <groupId>org.openjfx</groupId>
             <artifactId>javafx-fxml</artifactId>
@@ -110,23 +115,7 @@
             </plugin>
 
             <!-- Copies the depend FX files to your program  -->
-            <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-dependency-plugin</artifactId>
-                <executions>
-                    <execution>
-                        <id>copy-dependencies</id>
-                        <phase>prepare-package</phase>
-                        <goals>
-                            <goal>copy-dependencies</goal>
-                        </goals>
-                        <configuration>
-                            <outputDirectory>${project.build.directory}/modules</outputDirectory>
-                            <includeScope>runtime</includeScope>
-                        </configuration>
-                    </execution>
-                </executions>
-            </plugin>
+           
         </plugins>
     </build>
 </project>
